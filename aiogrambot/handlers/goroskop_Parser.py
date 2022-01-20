@@ -1,30 +1,7 @@
-import subprocess
-
-import schedule
-import transliterate
-from aiogram import types
-import re
-import datetime
-import asyncio
-from contextlib import suppress
-import schedule
-import time
-# Если запускаете код отдельно от этого репозитория, то закомментируйте следующую строку:
-from aiogram.utils.exceptions import MessageCantBeDeleted, MessageToDeleteNotFound
-
-from aiogrambot.misc import dp, bot
-
-from aiogram.types import ReplyKeyboardRemove, \
-    ReplyKeyboardMarkup, KeyboardButton, \
-    InlineKeyboardMarkup, InlineKeyboardButton, message
-
 # ... и замените её на:
 # from misc import dp
 
-
-
 import requests
-import lxml
 from bs4 import BeautifulSoup
 
 def goroskop():
