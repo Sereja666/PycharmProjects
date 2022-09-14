@@ -10,7 +10,6 @@ def gde_tovar():
 
     quotes = soup.find_all('span', class_='td info status-iconed')
 
-
     where = []
     for quote in quotes:
         a = quote.text
@@ -21,7 +20,7 @@ def gde_tovar():
 
     where_txt = ''
     for n in where:
-        where_txt+=n+'\n'
+        where_txt += n + '\n'
     print(where_txt)
     text = ''
 

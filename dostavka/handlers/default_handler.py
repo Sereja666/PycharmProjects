@@ -1,17 +1,13 @@
 import re
 
-
-
 from dostavka.misc import dp, bot, scheduler
 from aiogram import types
 
 from dostavka.dostavka_main import gde_tovar
 
 
-
 # ... и замените её на:
 # from misc import dp
-
 
 
 @dp.message_handler(commands=[''])
@@ -36,8 +32,5 @@ async def where_card():
     if tovar_txt is not False:
         for i in tovar_txt:
             await bot.send_message("334892317", i)
-
-
-
 
 # ___________________________________________________________________________________________________________
