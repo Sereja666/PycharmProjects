@@ -6,7 +6,7 @@ from yandex_connect import YandexConnectDirectory
 import transliterate
 from pyad import pyad
 
-import shutil, os, sys, subprocess, time
+
 
 api = YandexConnectDirectory('API от яндекса', org_id=None)  # ключ почтаря
 pyad.set_defaults(ldap_server="domenname.corp", username="admin", password="PASSWORD")  # от какого имени использовать АД

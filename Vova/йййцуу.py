@@ -1,13 +1,24 @@
+class Car:
+    def __init__(self, name):
+        self.color = "red"
+        self.price = 2000000
+        self.name = name
 
-import simple_draw as sd
+
+class Human:
+    def __init__(self, name, car):
+        self.age = 25
+        self.name = name
+        self.car = car
+
+    def change_color(self):
+        print(f'цвет был - {self.car.color}')
+        self.car.color = 'green'
+        print(f'цвет стал - {self.car.color}')
 
 
-
-shift = 50
-
-for x in range(6):
-        lb = sd.get_point(0+x, 0)
-        rb = sd.get_point(100+x, 50)
-        sd.rectangle(lb, rb, color=sd.COLOR_YELLOW, width=2)
-
-sd.pause()
+mers = Car(name='Мерс')
+vova = Human(name='Вова', car=mers)
+vova.change_color()
+# Вот тут человек Никита может менять цвет машины Аносова с красного на синий))))))
+# КАААААААААААААК???????!!!!!!
