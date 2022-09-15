@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-
+from delivery.misc import product_code
 
 def where_product():
-    url = 'https://gdeposylka.ru/courier/eshun/tracking/ZESZE2024463187YQ'
+    url = f'https://gdeposylka.ru/courier/eshun/tracking/{product_code}'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
 

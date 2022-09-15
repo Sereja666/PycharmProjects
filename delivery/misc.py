@@ -8,6 +8,8 @@ config = configparser.ConfigParser()
 config.sections()
 config.read('config.ini')
 bot_token = config['token']['token']
+product_code = config['product']['product']
+
 
 bot = Bot(token=bot_token)
 memory_storage = MemoryStorage()

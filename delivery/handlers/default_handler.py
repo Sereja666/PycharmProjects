@@ -3,7 +3,7 @@ import re
 from delivery.misc import dp, bot
 from aiogram import types
 
-from delivery.dostavka_main import where_product
+from delivery.delivery_def import where_product
 
 
 # ... и замените её на:
@@ -13,7 +13,6 @@ from delivery.dostavka_main import where_product
 @dp.message_handler(commands=[''])
 async def process_where_command(message: types.Message):
     for i in where_product():
-        # await send_message_to_all()
         await message.answer(i)
         # await bot.send_message(message.from_user.id, f'message.from_user.id {message.from_user.id}')
 
@@ -27,7 +26,6 @@ async def all_other_messages(message: types.Message):
 
 
 async def where_card():
-    # await bot.send_message('-100 558251543','hi there')
     product_txt = where_product()
 
     if product_txt is not False:
