@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 
 
-def gde_tovar():
+def where_product():
     url = 'https://gdeposylka.ru/courier/eshun/tracking/ZESZE2024463187YQ'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
@@ -21,11 +21,6 @@ def gde_tovar():
     where_txt = ''
     for n in where:
         where_txt += n + '\n'
-    print(where_txt)
-    text = ''
-
-    # with open("old.txt", "r") as f:
-    #     text = f.read()
 
     f = open("old.txt", "r")
     text = f.read()
@@ -36,8 +31,7 @@ def gde_tovar():
         f = open("old.txt", "w")
         f.write(where_txt)
         f.close()
-        print(f' return {where}')
+
         return where
     else:
-        print(' return False')
         return False

@@ -1,15 +1,13 @@
 #!venv/bin/python
-import time
 
-import schedule as schedule
-from aiogram import executor, Bot, Dispatcher, types
-from misc import *
+from aiogram import executor
+
 import warnings
 
 import asyncio
-import aioschedule
 
-from dostavka.handlers.default_handler import *
+
+from delivery.handlers.default_handler import *
 
 DELAY = 3600
 warnings.filterwarnings("ignore", category=DeprecationWarning)

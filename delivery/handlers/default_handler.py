@@ -1,9 +1,9 @@
 import re
 
-from dostavka.misc import dp, bot, scheduler
+from delivery.misc import dp, bot
 from aiogram import types
 
-from dostavka.dostavka_main import gde_tovar
+from delivery.dostavka_main import where_product
 
 
 # ... и замените её на:
@@ -12,7 +12,7 @@ from dostavka.dostavka_main import gde_tovar
 
 @dp.message_handler(commands=[''])
 async def process_where_command(message: types.Message):
-    for i in gde_tovar():
+    for i in where_product():
         # await send_message_to_all()
         await message.answer(i)
         # await bot.send_message(message.from_user.id, f'message.from_user.id {message.from_user.id}')
@@ -28,9 +28,11 @@ async def all_other_messages(message: types.Message):
 
 async def where_card():
     # await bot.send_message('-100 558251543','hi there')
-    tovar_txt = gde_tovar()
-    if tovar_txt is not False:
-        for i in tovar_txt:
+    product_txt = where_product()
+
+    if product_txt is not False:
+        await bot.send_message("334892317", '----------------------------------------------------')
+        for i in product_txt:
             await bot.send_message("334892317", i)
 
 # ___________________________________________________________________________________________________________
