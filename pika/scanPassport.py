@@ -8,7 +8,7 @@ file_pdf = r'C:\PyTest\passport.jpg'
 def scan(r):
     path_kern = r'C:\Program Files (x86)\ABBYY FineReader 15'
     # /optionsFile batch.options.xml
-    # command = r'cd "{kern_path}" & "FineCmd.exe" "{pdf}" /lang Mixed /out "{txt}" /quit'
+    # command = r'cd "{kern_path}" & "FineCmd.exe" "{my_pdf_tools}" /lang Mixed /out "{txt}" /quit'
     file_txt = f'C:\\PyTest\\passport_{r}.txt'
     command = f'cd "{path_kern}" & "FineCmd.exe" "{file_pdf}" /lang Mixed /optionsFile "C:\\Users\\Sereja\\Documents\\pasport\\batch.options.xml" /out "{file_txt}" /quit'
     os.system(command.format(kern_path=path_kern, pdf=file_pdf, txt=file_txt))

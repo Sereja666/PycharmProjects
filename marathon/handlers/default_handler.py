@@ -5,7 +5,7 @@ from aiogram import types
 
 from delivery.delivery_def import where_product
 from aiogram.types import ContentTypes, Message
-
+from marathon.bot_tools.chatGPT_for_bot import chat_bot
 # ... и замените её на:
 # from misc import dp
 
@@ -47,10 +47,14 @@ async def process_where_command(message: types.Message):
 
 @dp.message_handler(content_types=types.ContentTypes.TEXT, state="*")
 async def all_other_messages(message: types.Message):
+
     user_message = message.text
-    user_message = user_message.lower()  # привожу всё к мелким буквам
-    if re.search(r'\bкек\b', user_message):
-        await message.answer("чебурек")
+    if '*' in user_message:
+        print(user_message)
+        anwser = chat_bot(user_message)
+        print(anwser)
+        # await bot.send_message("334892317", anwser)
+        await message.answer(anwser)
 
 
 async def where_card():
@@ -62,3 +66,7 @@ async def where_card():
             await bot.send_message("334892317", i)
 
 # ___________________________________________________________________________________________________________
+@dp.message_handler(commands=['чат'])
+async def process_chat_id(message: types.Message):
+    await message.reply(message.chat.id)
+    await bot.send_message("334892317", message.chat.id)

@@ -7,7 +7,7 @@ from htmlCalendar import MonthlyCalendar
 
 
 app = Flask(__name__)
-app.secret_key = '946871263eqgjdhsajdhghj1g23j1h2gjhdga723'
+app.secret_key = ''
 app.config.update(SESSION_COOKIE_HTTPONLY=True)
 
 
