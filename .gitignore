@@ -1,2 +1,5 @@
 # Project exclude paths
 /pythonProject1/venv/
+/ffmpeg/
+/ffmpeg-2024-03-04-git-e30369bc1c-full_build/
+/фразы.txt
