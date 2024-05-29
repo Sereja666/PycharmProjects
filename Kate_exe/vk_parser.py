@@ -82,8 +82,8 @@ class VK_Robot:
     def convert_time(self, data):
         return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(data))
     def take_posts(self):
-        key = "kDbW9U3tUdmt1ttWIAH5" #Защищённый ключ
-        token = "83d296bb83d296bb83d296bbe480c01e5e883d283d296bbe030c2ca6dbcf836bca82d41" #Сервисный ключ доступа
+        key = "11111" #Защищённый ключ
+        token = "1111" #Сервисный ключ доступа
         version = 5.92
         offset = 0
         all_post = []
