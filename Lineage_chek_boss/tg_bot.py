@@ -24,6 +24,6 @@ import requests
 #
 #
 # # Пример использования функции
-# bot_token = '7062504863:AAEN-z4DUGN3PfMVD5oIpRGVPlElKOWLOdw'
-# chat_id = '-1002027147296'
+# bot_token = '111:AAEN-111'
+# chat_id = '-1111'
 # message = "тест!"
