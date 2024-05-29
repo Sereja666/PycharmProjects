@@ -1,7 +1,7 @@
 
 from yaweather import *
 
-api_key='c828a84c-1496-4a66-9e24-19183e20d6d9'
+api_key='1111'
 
 
 
