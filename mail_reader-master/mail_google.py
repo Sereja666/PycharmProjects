@@ -30,8 +30,8 @@
 
 from imap_tools import MailBox, AND, MailMessageFlags
 
-user: str = 'sermatrena@gmail.com'
-password: str = 'tllvxigosjmadauh'
+user: str = '1111@gmail.com'
+password: str = '1111'
 server: str = 'imap.gmail.com'
 # Server is the address of the IMAP server
 mb = MailBox(server).login(user, password)
