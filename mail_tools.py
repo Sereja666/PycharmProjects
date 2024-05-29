@@ -30,13 +30,13 @@
 
 from imap_tools import MailBox, AND, MailMessageFlags
 
-user: str = 'sermatrena@gmail.com'
-password: str = 'tllvxigosjmadauh'
+user: str = '11111@gmail.com'
+password: str = '1111'
 server: str = 'imap.gmail.com'
 # Server is the address of the IMAP server
 mb = MailBox(server).login(user, password)
 
-messages = mb.fetch(criteria=AND(seen=False, from_="sermatrena@gmail.com"),
+messages = mb.fetch(criteria=AND(seen=False, from_="1111@gmail.com"),
                     mark_seen=False,
                     bulk=True)
 
