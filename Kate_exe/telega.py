@@ -3,9 +3,9 @@ from datetime import datetime
 
 
 import requests
-TOKEN = "5880352957:AAG4FD5Bk0d1We4Km72Q8_RrTv2NC3ancwI"
+TOKEN = "1111:1111"
 def send_to_telega(resurs , name, news, day_data):
-    chat_id = "-805580491"
+    chat_id = "-1111"
 
 
     message = f'''**{resurs}**
@@ -18,7 +18,7 @@ def send_to_telega(resurs , name, news, day_data):
 from datetime import datetime
 
 import requests
-TOKEN = "5880352957:AAG4FD5Bk0d1We4Km72Q8_RrTv2NC3ancwI"
+TOKEN = "11111:1111"
 
 def send_to_telega(chat_id, message):
 
