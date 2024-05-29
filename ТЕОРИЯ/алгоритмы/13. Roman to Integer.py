@@ -67,7 +67,7 @@ class Solution:
 
         for symbol in s[::-1]:  # Начнем с конца римского числа
             value = symbol_dict[symbol]
-            if value < prev_value:  # Если текущий символ меньше предыдущего, значит нужно вычесть
+            if value < prev_value:  # Если текущий символ МЕНЬШЕ предыдущего, значит нужно вычесть
                 total -= value
             else:
                 total += value

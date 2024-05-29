@@ -19,16 +19,12 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-
         unswer = ''
-
         for el in zip(*strs):
-
-            if len(set(el)) == 1:
+            if len(set(el)) == 1: # Если сет (1, 1, 1) равен (1) то плюсуем и идём к сд
                 unswer += el[0]
             else:
                 break
-
         return unswer
 
 
