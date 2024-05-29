@@ -1,12 +1,12 @@
 import replicate
 
-model = replicate.Client(api_token="b04fd99477416d4d7144e96874a8fae18392ddbc")
+model = replicate.Client(api_token="1111")
 model = model.models.get("tstramer/midjourney-diffusion")
 
 version = model.versions.get("b04fd99477416d4d7144e96874a8fae18392ddbc")
 
 
-# https://replicate.com/tstramer/midjourney-diffusion/versions/436b051ebd8f68d23e83d22de5e198e0995357afef113768c20f0b6fcef23c8b#input
+
 inputs = {
     # Input prompt
     'prompt': "a photo of an astronaut riding a horse on mars",
