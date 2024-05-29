@@ -9,7 +9,7 @@ import pyttsx3
 
 
 # Replace YOUR_API_KEY with your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "sk-11111"
 
 
 def robot(message):
